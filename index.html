@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+
+    <title>SneakGame</title>
+</head>
+<body>
+
+    <section id="main-menu">
+        <div class="main-menu-block">
+            <div class="main-menu-text">SNEAKY</div>
+            <div class="main-menu-button" onclick="start_menu_onclick()">Start Game</div>
+            <div class="main-menu-button"onclick="quit()">Quit</div>
+        </div>
+    </section>
+
+
+    <section id="end-game-menu" class="end-game--hide">
+        <div class="main-menu-text end-game-block">THE GAME IS OVER</div>
+        <div class="main-menu-text end-game-scores">SCORES : <span id="scores">80</span></div>
+        <div class="main-menu-button" onclick="from_end_game_to_menu()">Main</div>
+    </section>
+
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+
+</body>
+</html>

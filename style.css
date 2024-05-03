@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(font/SpaceGrotesk-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(font/SpaceGrotesk-Bold.ttf);
+    font-weight: 800;
+}
+
+
+
+
+body{
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #232323;
+
+    font-family: 'Space Grotesk';
+}
+
+
+
+#main-menu{
+
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1a1f;
+
+    transition: left 200ms;
+}
+#main-menu.main-menu--hide{
+    left: -100%;
+}
+.main-menu-text{
+    font-weight: 800;
+    font-size: 32px;
+
+    color: #fff;
+
+    text-shadow: 0px 3px 0px #000;
+
+    user-select: none;
+}
+.main-menu-block{
+    margin-top: -100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-menu-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    width: 150px;
+    height: 35px;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+    font-weight: 800;
+    color: #2A2A2A;
+    background-color: #D0D0D0;
+    box-shadow: 0px 4px 0px #A8A8A8;
+    transition: box-shadow 150ms, background-color 150ms;
+
+    user-select: none;
+}
+.main-menu-button:hover{
+    color: #000;
+    background-color: #ed9613;
+    box-shadow: 0px 4px 0px #b16f0d;
+}
+
+
+
+
+#canvas{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+
+    background-color: #272727;
+}
+
+
+
+
+
+
+#end-game-menu{
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1a1f;
+
+    transition: left 200ms;
+}
+#end-game-menu.end-game--hide{
+    left: 100%;
+}
+.end-game-block{
+    font-size: 36px;
+}
+.end-game-scores{
+    font-size: 20px;
+}
